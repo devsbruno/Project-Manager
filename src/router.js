@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Dashboard from './views/DashBoard.vue'
+import Team from './views/Team.vue'
+import Projects from './views/Projects'
+import Bruno from './views/Bruno'
 
 Vue.use(Router)
 
@@ -10,9 +13,25 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'dashboard',
+      component: Dashboard
     },
+    {
+      path: '/team',
+      name: 'team',
+      component: Team
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: Projects
+    },
+    {
+      path: '/bruno',
+      name: 'bruno',
+      component: Bruno
+    },
+
     {
       path: '/about',
       name: 'about',
